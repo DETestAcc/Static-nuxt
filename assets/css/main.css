@@ -1,0 +1,61 @@
+@tailwind base;
+
+@tailwind components;
+
+a {
+  @apply text-blue-400;
+}
+
+.content {
+  width: 50rem;
+}
+
+.markdown p {
+  @apply mt-0 mb-6;
+}
+
+.markdown ul {
+  @apply mb-6;
+}
+
+.markdown pre {
+  @apply my-8;
+}
+
+.comment {
+  @apply whitespace-pre-wrap;
+}
+
+.comment p {
+  @apply mb-4 inline-block;
+}
+
+.comment pre {
+  @apply my-4;
+}
+
+.comment p:last-child {
+  @apply mb-0;
+}
+
+/* purgecss start ignore */
+table {
+  @apply overflow-auto w-full;
+  border-spacing: 0;
+}
+
+table tr {
+  @apply bg-white border-t border-gray-400;
+}
+
+table th, table td {
+  @apply border border-gray-400 py-2 px-4;
+}
+
+
+.search-results em {
+  @apply not-italic bg-blue-200;
+}
+/* purgecss end ignore */
+
+@tailwind utilities;
